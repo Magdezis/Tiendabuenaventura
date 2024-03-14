@@ -7,7 +7,6 @@ class Consultas
     public function insertar($nombre, $apellido, $direccion, $telefono)
     {
         include("c:/xampp/htdocs/tiendabuenaventura/configdb/confgdb.php");
-
         $conn = new Conexion();
         $insert = "INSERT INTO clientes(nombre, apellido, direccion, telefono)
       VALUES('$nombre', '$apellido', '$direccion', '$telefono')";
